@@ -17,6 +17,13 @@ body {
   width: 40px;
 }
 
+@media (max-width: 750px) {
+  .logo {
+    height: 40px;
+    width: 40px;
+  }
+}
+
 .logo__image {
   height: 100%;
   width: 100%;
@@ -37,6 +44,10 @@ body {
   margin-left: 0;
 }
 
+:root {
+  --nav-link-color: #00acdc;
+}
+
 .nav__link {
   position: relative;
   display: flex;
@@ -53,11 +64,11 @@ body {
 }
 
 .nav__link:hover {
-  color: #00acdc;
+  color: var(--nav-link-color);
 }
 
 .nav__link.is-active {
-  color: #00acdc;
+  color: var(--nav-link-color);
 }
 
 .nav__link.is-active::after {
