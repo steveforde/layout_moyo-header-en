@@ -17,13 +17,6 @@ body {
   width: 40px;
 }
 
-@media (max-width: 750px) {
-  .logo {
-    height: 40px;
-    width: 40px;
-  }
-}
-
 .logo__image {
   height: 100%;
   width: 100%;
@@ -63,10 +56,7 @@ body {
   transition: color 0.3s;
 }
 
-.nav__link:hover {
-  color: var(--nav-link-color);
-}
-
+.nav__link:hover,
 .nav__link.is-active {
   color: var(--nav-link-color);
 }
